@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="suitename" parallel="methods"  thread-count="3">
+
+
+    <!--
+        parallel: 让方法运行在不同线程中
+        parallel="methods" ： 每个@Test 都在不同线程中运行
+        parallel="tests" : 每个<test>在同一个标签下运行
+        parallel="classes" : 每个<class>在同一个标签下运行
+
+
+
+    -->
+
+    <test name="testname">
+        <classes>
+            <class name="com.test.frame.mulitThraed.multi2"/>
+            <class name="com.test.frame.mulitThraed.multi3"/>
+        </classes>
+    </test>
+
+</suite>
