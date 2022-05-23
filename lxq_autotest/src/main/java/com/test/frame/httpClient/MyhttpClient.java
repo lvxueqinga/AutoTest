@@ -26,7 +26,7 @@ import java.util.ResourceBundle;
  *  运行时先运行jar包
  *
  *  cd /Users/lvxueqing/OnlyMyCode/autoTest/AutoTest/lxq_autotest/src/main/java/com/test/frame/httpClient
- *  java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c startupWithCookies.json
+ *  java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c startupWithCookies.json
  *
  */
 
@@ -58,7 +58,7 @@ public class MyhttpClient {
     @BeforeMethod
     public void beforeMethod(){
         //会自动识别resource下的配置文件
-        bundle = ResourceBundle.getBundle("application", Locale.CHINA);
+        bundle = ResourceBundle.getBundle("httpClient", Locale.CHINA);
         url = bundle.getString("test.url");
 
     }
